@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get 'outbound' => 'listings#outbound'
   get '/index' => 'listings#index'
+  get '/show' => 'listings#show'
   root 'listings#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
