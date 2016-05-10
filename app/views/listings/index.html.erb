@@ -1,4 +1,6 @@
-<%= button_to "View As JSON", outbound_path, method: "get" %>
+<div align="center" ><%= button_to "Gimme The JSON!", outbound_path, method: "get" %></div>
+<br>
+<div align="center" id="loading"></div>
 
 <% @listings.each_with_index do |listing, index| %>
 <%= index + 1 %>.<br>
