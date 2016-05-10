@@ -1,5 +1,4 @@
 class ListingParser
-  require 'Nokogiri'
   require 'open-uri'
 
   def self.parse_listings
