@@ -1,13 +1,9 @@
 $(function(){
 
-    // $('input').on("click", function(event){
-    //   // event.preventDefault();
-    //   // $.get("/outbound")
-    // })
+    $('input').on("click", function(event){
+      $.get("/outbound")
+    })
 
-    // $(document).ajaxSuccess(function(event, request, option, data){
-
-    // })
 
 }) 
 
