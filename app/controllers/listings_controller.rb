@@ -4,6 +4,9 @@ class ListingsController < ApplicationController
     @listings = ListingParser::parse_listings
   end
 
+  def show
+  end
+
   def outbound
     @listings = ListingParser::parse_listings
     render json: @listings

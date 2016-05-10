@@ -1,6 +1,6 @@
 $(function(){
 
-    $('input').on("click", function(event){
+    $('input#welcome').on("click", function(event){
       $.get("/outbound")
     })
 
