@@ -1,0 +1,9 @@
+<% @listings.each_with_index do |listing, index| %>
+<%= index + 1 %>.<br>
+Address: <%= listing.address %><br>
+Unit: <%= listing.unit %><br>
+Price: <%= listing.price %><br>
+Type of Listing: <%= listing.listing_class %><br>
+<%= link_to("Find Out More Here", listing.url )%> <br> 
+<br>
+<% end %>
