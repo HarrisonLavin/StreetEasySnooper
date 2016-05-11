@@ -1,5 +1,4 @@
 class ListingParser
-    require 'open-uri'
 
       def parse_listings
 
