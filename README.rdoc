@@ -3,6 +3,8 @@ A quick web app that scrapes StreetEasy's listing in SoHo for the 20 most expens
 
 Interesting Code is located in:
 ====app/services/Listing_parser.rb
+====app/service/Listing_wrapper.rb
+====app/service/Listing_sanitizer.rb
 ====app/models/listing.rb
 As well as having more standard code in the controller and the views.
 (Plus, there's a small amount of JavaScript in listing.js)
