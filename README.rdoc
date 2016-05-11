@@ -2,7 +2,7 @@
 A quick web app that scrapes StreetEasy's listing in SoHo for the 20 most expensive rentals and sales.  Uses nokogiri to scrape the site, bundles up the listings into objects, and renders them either in human-readable format or in JSON.
 
 Interesting Code is located in:
-=app/services/Listing_parser.rb
-=app/models/listing.rb
-=As well as having more standard code in the controller and the views.
+===app/services/Listing_parser.rb
+===app/models/listing.rb
+===As well as having more standard code in the controller and the views.
 (Plus, there's a small amount of JavaScript in listing.js)
