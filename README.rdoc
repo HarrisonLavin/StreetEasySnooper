@@ -5,7 +5,7 @@ Interesting Code is located in:
 ====app/services/Listing_parser.rb
 ====app/services/Listing_wrapper.rb
 ====app/services/Listing_sanitizer.rb
-====app/services/Listing_scraper
+====app/services/Listing_scraper.rb
 ====app/models/listing.rb
 As well as having more standard code in the controller and the views.
 (Plus, there's a small amount of JavaScript in listing.js)
