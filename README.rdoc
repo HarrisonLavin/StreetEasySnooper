@@ -1,28 +1,8 @@
-== README
+== StreetEasy Snooper
+A quick web app that scrapes StreetEasy's listing in SoHo for the 20 most expensive rentals and sales.  Uses nokogiri to scrape the site, bundles up the listings into objects, and renders them either in human-readable format or in JSON.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Interesting Code is located in:
+app/services/Listing_parser.rb
+app/models/listing.rb
+As well as having more standard code in the controller and the views.
+(Plus, there's a small amount of JavaScript in listing.js)
