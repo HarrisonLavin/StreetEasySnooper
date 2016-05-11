@@ -1,7 +1,8 @@
 class ListingsController < ApplicationController
 
   def index
-    @listings = ListingParser::parse_listings
+    parser = ListingParser.new()
+    @listings = parser.parse_listings
   end
 
   def show
@@ -9,7 +10,8 @@ class ListingsController < ApplicationController
   end
 
   def json
-    @listings = ListingParser::parse_listings
+    parser = ListingParser.new()
+    @listings = parser.parse_listings
     render json: @listings
   end
 

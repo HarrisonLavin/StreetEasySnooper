@@ -1,8 +1,8 @@
- class ListingWrapper
+class ListingWrapper
 
   attr :listings
 
-  def initialize(array)
+  def run(array)
     @listings = []
     cleaner = ListingSanitizer.new()
     array.each_with_index do |listing, index|
@@ -14,6 +14,7 @@
         price:         cleaner.get_price_of(array,index)
       })
     end
+    @listings
   end
 
 end
