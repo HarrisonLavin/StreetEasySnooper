@@ -1,4 +1,3 @@
-
 class ListingScraper
   require 'open-uri'
   attr_accessor :xml
