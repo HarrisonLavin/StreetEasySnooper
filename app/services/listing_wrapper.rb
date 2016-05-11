@@ -1,16 +1,17 @@
  class ListingWrapper
 
-  attr :result
+  attr :listings
 
   def initialize(array)
-    @result = []
+    @listings = []
+    cleaner = ListingSanitizer.new()
     array.each_with_index do |listing, index|
-      @result[index]= Listing.new({
-        listing_class: ListingSanitizer.get_class_of(array,index),
-        address:       ListingSanitizer.get_address_of(array,index),
-        unit:          ListingSanitizer.get_unit_of(array,index),
-        url:           ListingSanitizer.get_url_of(array,index),
-        price:         ListingSanitizer.get_price_of(array,index)
+      @listings[index]= Listing.new({
+        listing_class: cleaner.get_class_of(array,index),
+        address:       cleaner.get_address_of(array,index),
+        unit:          cleaner.get_unit_of(array,index),
+        url:           cleaner.get_url_of(array,index),
+        price:         cleaner.get_price_of(array,index)
       })
     end
   end

@@ -20,8 +20,8 @@ class ListingParser
       #===========================#
 
       #Maps the arrays XML elements into a new array of combined Listing Objects
-      @result.concat(ListingWrapper.new(@rentals).result)
-      @result.concat(ListingWrapper.new(@sales).result)
+      @result.concat(ListingWrapper.new(@rentals).listings)
+      @result.concat(ListingWrapper.new(@sales).listings)
 
       #The results array, at this point, is listed with prices in Ascending order
       #So the array gets reversed here.
