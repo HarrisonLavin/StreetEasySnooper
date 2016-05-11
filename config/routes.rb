@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'outbound' => 'listings#outbound'
+  get 'json' => 'listings#json'
   get '/index' => 'listings#index'
   get '/show' => 'listings#show'
   root 'listings#show'

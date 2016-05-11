@@ -8,7 +8,7 @@ class ListingsController < ApplicationController
 
   end
 
-  def outbound
+  def json
     @listings = ListingParser::parse_listings
     render json: @listings
   end
